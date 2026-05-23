@@ -1,0 +1,52 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+build/
+dist/
+.eggs/
+
+# Tests / coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+
+# Virtual environments
+venv/
+.venv/
+env/
+.env
+
+# IDE / editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Bridge runtime artifacts
+_launch_agent.bat
+nul
+*.log
+
+# Personal scratch files I keep using during dev
+_smoke*.py
+_dbg*.py
+_check*.py
+_recheck*.py
+_agent_check*.py
+_persist_check*.py
+_engine_check*.py
+_e2e_cli*.py
+_final_smoke*.py
