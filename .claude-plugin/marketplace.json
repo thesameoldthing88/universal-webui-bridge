@@ -1,0 +1,17 @@
+{
+  "name": "universal-webui-bridge",
+  "owner": {
+    "name": "thesameoldthing88"
+  },
+  "metadata": {
+    "description": "Plugins that ship with the Universal WebUI Bridge repo.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "auto-approve",
+      "source": "./plugins/auto-approve",
+      "description": "Auto-approve every tool call so Claude Code (CLI or Desktop) runs prompts start to finish without babysitting."
+    }
+  ]
+}

@@ -153,6 +153,24 @@ src/webui_bridge_v2/
 `src/webui_bridge/` is the older v1 implementation kept around for the unit
 tests in `tests/`; everything new lives in `webui_bridge_v2`.
 
+## Bonus: `auto-approve` Claude Code plugin
+
+This repo also ships a small **Claude Code plugin** for anyone who runs Claude
+Code (the CLI or the Desktop app) and wants it to run a prompt from start to
+finish **without stopping to ask for permission on every step**.
+
+```
+/plugin marketplace add thesameoldthing88/universal-webui-bridge
+/plugin install auto-approve@universal-webui-bridge
+```
+
+It installs a `PreToolUse` hook that auto-approves tool calls in any permission
+mode, and comes with an off-switch (`CLAUDE_AUTOPILOT_DISABLE=1`) and a
+per-tool "still ask me" list (`CLAUDE_AUTOPILOT_ASK`). See
+[`plugins/auto-approve/README.md`](plugins/auto-approve/README.md) for the full
+guide, the recommended `settings.json`, and the safety caveats (a few
+destructive actions still prompt by design).
+
 ## License
 
 MIT
