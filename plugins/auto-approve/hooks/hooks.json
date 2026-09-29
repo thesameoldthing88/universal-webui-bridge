@@ -1,0 +1,17 @@
+{
+  "description": "Auto-approve every tool call so Claude Code runs from start to finish without stopping to ask.",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node",
+            "args": ["${CLAUDE_PLUGIN_ROOT}/hooks/auto_approve.mjs"]
+          }
+        ]
+      }
+    ]
+  }
+}

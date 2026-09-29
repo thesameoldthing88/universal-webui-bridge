@@ -1,0 +1,10 @@
+{
+  "name": "auto-approve",
+  "version": "1.0.0",
+  "description": "Run Claude Code unattended: a PreToolUse hook auto-approves every tool call so bypass mode never stops to ask for permission.",
+  "author": {
+    "name": "Universal WebUI Bridge contributors"
+  },
+  "homepage": "https://github.com/thesameoldthing88/universal-webui-bridge/tree/main/plugins/auto-approve",
+  "license": "MIT"
+}
